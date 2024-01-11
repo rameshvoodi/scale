@@ -7,13 +7,9 @@ function App() {
 
   return (
     <div>
-      <div className="bg-gray-200  m-2 text-center">
-        ----Random Container----
-      </div>
+      <div className="bg-gray-200 text-center">----Random Container----</div>
       <JsxRenderer jsxString={jsxString} scale={0.286} />
-      <div className="bg-gray-200  m-2 text-center">
-        ----Random Container----
-      </div>
+      <div className="bg-gray-200 text-center">----Random Container----</div>
     </div>
   );
 }
