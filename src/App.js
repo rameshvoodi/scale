@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import JsxRenderer from "./components/JsxRenderer";
 
 function App() {
+  const jsxString =
+    '<div style="background-color: blue; width: 1400px; height: 1500px; display: flex; align-items: center; justify-content: center; color: white;">Test String</div>';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="bg-gray-200 p-5 m-2 text-center">
+        ----Random Container----
+      </div>
+      <JsxRenderer jsxString={jsxString} scale={0.286} />
+      <div className="bg-gray-200 p-5 m-2 text-center">
+        ----Random Container----
+      </div>
     </div>
   );
 }
